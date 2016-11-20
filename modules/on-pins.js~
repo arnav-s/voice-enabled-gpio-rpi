@@ -1,0 +1,13 @@
+module.exports = {};
+module.exports.onPin = function (pin, io, gpio) {
+    gpio.open(pin, "output", function(err){
+	/*if (err) {
+	    console.log(err);
+	    io.emit('error', "Pin " + pin + " couldn't be turned on.");
+	} else  {*/
+	    gpio.write(pin, 1, function(){
+		io.emit('on-success', pin);
+	    /*}*/);
+	}
+    });
+}

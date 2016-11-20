@@ -1,0 +1,20 @@
+{
+	"name": "",
+	"version": "0.0.0.1",
+	"description": "Basic simulation of voice controlled home automation.",
+	"main": "server.js",
+	"author": "Avichal Rakesh, Arnav Sharma, Aniket Dalvi, Yash Shah, Sudharshanan Ramanathan",
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specifiecd\" && exit 1"
+	},
+	"license": "Beerware",
+	"dependencies": {
+		"express": "4.14.0",
+		"pi-gpio": "0.0.8",
+		"socket.io": "1.6.0"
+	} 	
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html> 
+  <head> 
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/jquery-3.1.1.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="assets/js/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Voice Automation</title>
+  </head>
+  <body> 
+    
+    <ul class="leds">
+      <li id="11" class="led-li">LED 1</li> 
+      <li id="12" class="led-li">LED 2</li> 
+      <li id="13" class="led-li">LED 3</li> 
+      <li id="15" class="led-li">LED 4</li> 
+      <li id="16" class="led-li">LED 5</li>
+    </ul>  
+    <div class="sound-container">
+      <div class="sound-text" id="transcription">
+	Press the button and start speaking!
+      </div>
+      <br>
+      <div class="sound-button-container">
+	<div class="sound-button">
+	  <img src="assets/images/mic.png" class="sound-image">  
+	</div>
+      </div>
+    </div>
+  </body>
+</html>

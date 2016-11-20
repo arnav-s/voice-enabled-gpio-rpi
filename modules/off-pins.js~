@@ -1,0 +1,8 @@
+module.exports = {};
+
+module.exports.offPin = function(pin, io, gpio) {
+    gpio.write(pin, 0, function(){
+	gpio.close(pin);
+	io.emit('off-success', pin);
+    });
+}
